@@ -1,0 +1,347 @@
+/* --- Variables et Reset --- */
+:root {
+    --bg-color: #fff;
+    --text-color: #000;
+    --font-sans: 'Montserrat', sans-serif;
+    --font-serif-italic: 'Playfair Display', serif;
+    --border-color: #ddd;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+ 
+/* TODO: Faire une fonction js qui rend la position absolute responsive */
+#webgl-container {
+    position: fixed; /* Reste collé à l'écran même au scroll */
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%, -50%); /* Centre le point d'ancrage exactement au milieu */
+    z-index: 10; /* Assure-toi qu'il est au-dessus des images */
+    
+    /* ASTUCE TRÈS IMPORTANTE POUR LA 3D SUPERPOSÉE :
+      Si ton conteneur est plus grand que ton logo, il risque de bloquer
+      les clics ou le scroll sur les images en dessous. 
+      On désactive les événements sur le conteneur...
+    */
+    pointer-events: none; 
+}
+
+/* et on les réactive UNIQUEMENT sur le rendu 3D (le canvas) */
+#webgl-container canvas {
+    pointer-events: auto;
+    /* transform: translateX(-1em); */
+     /* Ajuste cette valeur pour le faire glisser vers le haut/bas */
+}
+
+/* --- Header (Mobile First) --- */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--border-color);
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.mobile-nav {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+/* Mobile : Les éléments s'empilent */
+.home-gallery {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    background-color: var(--bg-color);
+}
+
+.gallery-left, .gallery-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.gallery-left.absolute {
+    position: relative; /* Pas d'effet sticky sur mobile */
+}
+
+/* Style des images générales */
+.gallery-left img, .gallery-right img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Texte par-dessus l'image de gauche */
+.absolute-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+/* Les deux images côte à côte (Droite) */
+.gallery-item-half-container {
+    display: flex;
+    width: 100%;
+}
+
+.gallery-item.half {
+    width: 50%;
+}
+
+.gallery-item.half img {
+    height: 100%;
+}
+
+/* Barre de précommande */
+.gallery-item.full-width {
+    position: relative;
+}
+
+.preorder-bar {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-family: var(--font-serif-italic);
+    font-style: italic;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* --- Conteneur de Texte Standard --- */
+.content-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* --- Sections Supplémentaires --- */
+.hero-section {
+    position: relative;
+    width: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.description-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.tech-text {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.tech-text.highlight {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.values-section {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.section-title {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.value-block {
+    margin-bottom: 25px;
+}
+
+.value-block h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.value-block p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.quote-block {
+    font-family: var(--font-sans);
+    font-style: italic;
+    font-size: 14px;
+    border-left: 2px solid #000;
+    padding-left: 15px;
+    margin: 25px 0;
+}
+
+.schema-section {
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.schema-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* --- Newsletter & Instagram --- */
+.newsletter-section {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.newsletter-box {
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.newsletter-box p {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    font-family: var(--font-sans);
+    font-size: 12px;
+}
+
+.newsletter-form button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-family: var(--font-sans);
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.instagram-link {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    width: 100%;
+}
+
+
+/* --- AJUSTEMENTS POUR BUREAU (Écrans > 768px) --- */
+@media (min-width: 768px) {
+    /* Activation de l'effet gauche fixe / droite défilante */
+    .home-gallery {
+        flex-direction: row;
+        align-items: flex-start; /* Essentiel pour que le sticky fonctionne */
+    }
+
+    .gallery-left.absolute {
+        position: sticky;
+        top: 0; /* ou la hauteur de ton header si tu veux qu'il reste sous le header : top: 60px; */
+        left: 0;
+        width: 50%;
+        height: 100vh;
+    }
+
+    .gallery-left img {
+        height: 100%; /* L'image prend toute la hauteur de l'écran */
+    }
+
+    .absolute-text {
+        bottom: 40px;
+        left: 40px;
+        font-size: 2rem;
+    }
+
+    .gallery-right {
+        width: 50%;
+    }
+
+    /* Typographie et espacements Desktop */
+    .content-container {
+        padding: 40px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .tech-text, .value-block p, .quote-block {
+        font-size: 16px;
+    }
+
+    .preorder-bar {
+        font-size: 22px;
+        padding: 20px;
+    }
+
+    /* Newsletter Desktop */
+    .newsletter-form {
+        flex-direction: row;
+    }
+    
+    .newsletter-form input {
+        flex: 2;
+    }
+    
+    .newsletter-form button {
+        flex: 1;
+    }
+    
+    .instagram-link {
+        width: auto;
+        display: inline-block;
+        padding: 10px 30px;
+    }
+}

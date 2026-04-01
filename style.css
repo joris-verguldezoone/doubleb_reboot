@@ -1,0 +1,246 @@
+/* --- Variables et Reset --- */
+:root {
+    --primary-bg: #fff;
+    --footer-bg: #808060; /* Approximatif Kaki */
+    --accent-violet: #6200EE; /* Approximatif Violet */
+    --accent-pink: #FF1493; /* Approximatif Rose Fluo */
+    --text-color: #333;
+    --font-sans: 'Montserrat', sans-serif;
+    --font-serif-italic: 'Playfair Display', serif; /* Exemple police italique pour les tampons */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* --- Header --- */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cart-count {
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 7px;
+    font-size: 12px;
+}
+
+/* --- Main Content (About Page) - Base/Desktop --- */
+.about-container {
+    padding: 50px;
+    max-width: 1400px; /* Limite la largeur sur très grands écrans */
+    margin: 0 auto;
+}
+
+.about-title {
+    text-align: center;
+    font-size: 32px;
+    color: var(--accent-violet);
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.arrow-up, .arrow-down {
+    font-size: 24px;
+    color: #888;
+}
+
+.bio-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.bio-box {
+    display: flex; /* Aligne texte et image côte à côte */
+    border: 3px solid var(--accent-pink);
+    border-radius: 20px;
+    padding: 40px;
+    gap: 40px;
+}
+
+.bio-content {
+    flex: 2; /* Prend 2/3 de l'espace */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bio-text p {
+    margin-bottom: 15px;
+}
+
+.spotify-widget {
+    margin-top: 20px;
+}
+
+.bio-image-wrapper {
+    flex: 1; /* Prend 1/3 de l'espace */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bio-main-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: var(--accent-violet);
+    text-decoration: none;
+}
+
+.portfolio-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.portfolio-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-serif-italic);
+    font-style: italic;
+    font-size: 14px;
+    color: red;
+    background-image: url('tampon-oval.svg'); /* Exporte le tampon en SVG depuis Figma */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* --- Footer --- */
+.main-footer {
+    background-color: var(--footer-bg);
+    color: #fff;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.footer-socials a {
+    color: #fff;
+}
+
+/* --- MEDIA QUERY : ADAPTATION MOBILE (Écrans < 768px) --- */
+@media (max-width: 768px) {
+    .main-header {
+        padding: 15px 20px;
+    }
+    
+    .logo {
+        font-size: 22px;
+    }
+
+    .main-nav {
+        display: none; /* Cache le menu desktop pour un futur menu burger JS */
+    }
+
+    .about-container {
+        padding: 20px;
+    }
+
+    .about-title {
+        font-size: 24px;
+    }
+
+    /* La bio-box passe en colonne */
+    .bio-box {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    /* Change l'ordre pour mettre l'image au-dessus du texte sur mobile */
+    .bio-image-wrapper {
+        order: 1;
+        width: 100%;
+    }
+
+    .bio-content {
+        order: 2;
+        width: 100%;
+    }
+
+    .bio-main-image {
+        max-width: 300px; /* Limite la taille de l'image sur mobile */
+        margin: 0 auto;
+    }
+
+    .portfolio-buttons {
+        flex-direction: column; /* Boutons l'un sous l'autre */
+        align-items: center;
+        gap: 15px;
+    }
+}

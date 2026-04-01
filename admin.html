@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>FABBENE | Dashboard Admin</title>
+    <link rel="stylesheet" href="admin-style.css">
+    <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="admin-wrapper">
+        <nav class="sidebar">
+            <h2>FABBENE</h2>
+            <ul>
+                <li class="active" onclick="showTab('images')"><i class="fas fa-images"></i> Gestion Images</li>
+                <li onclick="showTab('mails')"><i class="fas fa-envelope"></i> Templates Mail</li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="tab-images" class="admin-tab">
+                <h1>Gestion des visuels (Home)</h1>
+                <p>Sélectionnez une image pour remplacer l'actuelle (écrase le fichier).</p>
+                
+                <div class="image-grid">
+                    <div class="img-slot">
+                        <span>HOME-1.PNG</span>
+                        <div class="preview" id="prev-1"></div>
+                        <input type="file" id="file-1" accept="image/png" onchange="previewImg(1)">
+                        <button class="btn-upload" onclick="uploadImg(1)">Remplacer</button>
+                    </div>
+                    <div class="img-slot">
+                        <span>HOME-2.PNG</span>
+                        <div class="preview" id="prev-2"></div>
+                        <input type="file" id="file-2" accept="image/png" onchange="previewImg(2)">
+                        <button class="btn-upload" onclick="uploadImg(2)">Remplacer</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tab-mails" class="admin-tab" style="display:none;">
+                <h1>Modèles de Mail</h1>
+                
+                <div class="mail-manager">
+                    <div class="selector">
+                        <label>Choisir le modèle actif :</label>
+                        <select id="mail-selector" onchange="loadMailTemplate()">
+                            <option value="welcome">Mail de Bienvenue</option>
+                            <option value="preorder">Confirmation Précommande</option>
+                            <option value="newsletter">News Hebdo</option>
+                        </select>
+                        <button class="btn-save" onclick="saveMail()">Enregistrer le template</button>
+                    </div>
+
+                    <div class="editor">
+                        <input type="text" id="mail-subject" placeholder="Objet du mail...">
+                        <textarea id="mail-content" rows="15" placeholder="Rédigez votre template en HTML ou texte brut..."></textarea>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="admin-script.js"></script>
+</body>
+</html>
