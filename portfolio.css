@@ -25,7 +25,7 @@ body {
 #webgl-container {
     position: fixed; /* Reste collé à l'écran même au scroll */
     top: 50%;
-    left: 49%;
+    left: 48%;
     transform: translate(-50%, -50%); /* Centre le point d'ancrage exactement au milieu */
     z-index: 10; /* Assure-toi qu'il est au-dessus des images */
     
