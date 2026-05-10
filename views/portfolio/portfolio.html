@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FABBENE - Précommande Veste</title>
     <link rel="stylesheet" href="./portfolio.css">
+    <link rel="stylesheet" href="../../shared//css/header.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
@@ -20,18 +21,21 @@
 </head>
 <body>
 
-<header class="main-header">
-    <div class="logo">FABBENE</div>
-    <nav class="main-nav">
-        <ul>
-            <li><a href="../../index.html">HOME</a></li>
-            <li><a href="#">PORTFOLIO</a></li>
-            <li><a href="../story/story.html">STORY</a></li>
-            <li><a href="../contact/contact.html">CONTACT</a></li>
-            <li><a href="#">FAQ</a></li>
-        </ul>
-    </nav>
-</header>
+  <header>
+        <nav>
+            <div class="logo">LOGO</div>
+            <ul class="nav-links">
+                <li><a href="../../index.html">HOME</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="../story/story.html" class="active">STORY</a></li>
+                <li><a href="../contact/contact.html">CONTACT</a></li>
+            </ul>
+            <div class="cart-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            </div>
+        </nav>
+    </header>
+
 
 <main>
     <section class="home-gallery">
@@ -42,7 +46,7 @@
 
         <div class="gallery-right">
             <div class="gallery-item">
-                <img src="../../public/assets/./public/assets/home-02.png" alt="Fabbene Style 2">
+                <img src="../../public/assets/home-02.png" alt="Fabbene Style 2">
             </div>
             
             <div class="gallery-item-half-container">
