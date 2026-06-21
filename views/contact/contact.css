@@ -17,38 +17,6 @@ body {
     color: #000;
     line-height: 1.6;
 }
-
-/* Header */
-.main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 5%;
-    border-bottom: 1px solid #eee;
-}
-
-.logo-placeholder {
-    width: 40px;
-    height: 25px;
-    background: #ccc;
-}
-
-.nav-links {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    font-size: 0.85rem;
-    letter-spacing: 2px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--text-gray);
-}
-
-.nav-links a.active { color: #000; font-weight: bold; }
-.nav-links .separator { color: #ddd; }
-
 /* Section Contact */
 .contact-section {
     background-image:url("../../public/assets/fond-site-rose.jpg");

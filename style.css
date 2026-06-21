@@ -9,63 +9,15 @@
     --font-serif-italic: 'Playfair Display', serif; /* Exemple police italique pour les tampons */
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+main {
+    background-image: url('./public/assets/FOND\ SITE\ \(3\)-1.png');
 }
 
+/* Le reset global de la police a été retiré ici pour laisser header.css imposer 'Inter' sur tout le site */
 body {
-    font-family: var(--font-sans);
     background-color: var(--primary-bg);
     color: var(--text-color);
     line-height: 1.6;
-}
-
-/* --- Header --- */
-.main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    border-bottom: 1px solid #ddd;
-}
-
-.logo {
-    font-size: 28px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.main-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-}
-
-.main-nav a {
-    text-decoration: none;
-    color: inherit;
-    font-weight: 500;
-}
-
-.header-right {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.cart-icon {
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.cart-count {
-    background-color: #333;
-    color: #fff;
-    border-radius: 50%;
-    padding: 2px 7px;
-    font-size: 12px;
 }
 
 /* --- Main Content (About Page) - Base/Desktop --- */
@@ -195,17 +147,7 @@ body {
 
 /* --- MEDIA QUERY : ADAPTATION MOBILE (Écrans < 768px) --- */
 @media (max-width: 768px) {
-    .main-header {
-        padding: 15px 20px;
-    }
-    
-    .logo {
-        font-size: 22px;
-    }
-
-    .main-nav {
-        display: none; /* Cache le menu desktop pour un futur menu burger JS */
-    }
+    /* Les règles du header mobile ont été supprimées d'ici */
 
     .about-container {
         padding: 20px;

@@ -6,24 +6,28 @@
     <title>Contact | Votre Marque</title>
     <link rel="stylesheet" href="./contact.css">
     <link rel="stylesheet" href="../../shared/css/header.css">
+    <link rel="stylesheet" href="../../shared/css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
- <header class="main-header">
-        <div class="logo-placeholder"></div>
-        <nav class="nav-links">
-            <span class="separator">|</span>
-            <a href="../story/story.html" class="inactive">STORY</a>
-            <a href="../../index.html" class="inactive">HOME</a>
-            <a href="../portfolio/portfolio.html" class="inactive">PORTFOLIO</a>
-            <span class="separator">|</span>
-            <a href="#" class="active">CONTACT</a>
+    <header>
+        <nav>
+            <div class="header-container"> 
+                <div class="logo">LOGO</div>
+            <ul class="nav-links">
+                <li><a href="../../index.html">HOME</a></li>
+                <li><a href="../portfolio/portfolio.html">PORTFOLIO</a></li>
+                <li><a href="../story/story.html">STORY</a></li>
+                <li><a href="#" class="active">CONTACT</a></li>
+                <div class="cart-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                </div>
+            </ul>
         </nav>
-        <div class="cart-icon">
-            <i class="fa-solid fa-cart-shopping"></i>
-        </div>
     </header>
+
+
     <main class="contact-section">
         <h1 class="main-title">PRENDRE CONTACT</h1>
 
@@ -71,24 +75,42 @@
         </div>
     </main>
 
-    <footer class="main-footer">
-        <div class="footer-col">
-            <h3>Footer</h3>
-            <p>© contact@votre-marque.com.<br>All rights reserved.</p>
+    <div><a class="back-to-top" href="#">Back To Top</a></div>
+
+    <footer class="fb-footer">
+        <div class="fb-footer-top">
+            <div class="fb-footer-brand">
+            <p><em>Fa Bene propose des vestes durables, sur-mesure, et accessibles, qui reflètent l'identité de chacun pour aider tout le monde mérite à exprimer qui il est, sans compromis.</em></p>
+            </div>
+            <div class="fb-footer-newsletter">
+            <p><em>ABBonnez-vous pour BBénéficier de 10% de réduction sur votre première achat.</em></p>
+            <form class="fb-newsletter-form">
+                <input type="email" placeholder="your@email.address" class="fb-newsletter-input" required>
+                <button type="submit" class="fb-newsletter-btn">GO</button>
+            </form>
+            </div>
         </div>
-        <div class="footer-col">
-            <h3>Links</h3>
-            <ul class="footer-list">
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Semarate</a></li>
+
+        <div class="fb-footer-middle">
+            <a href="#" class="fb-footer-link"><em>Instagram</em></a>
+        </div>
+
+        <div class="fb-footer-nav">
+            <ul class="fb-nav-list">
+            <li><a href="#" class="fb-footer-link"><em>Search</em></a></li>
+            <li><a href="#" class="fb-footer-link"><em>Contact Us</em></a></li>
+            <li><a href="#" class="fb-footer-link"><em>Terms & Conditions</em></a></li>
+            <li><a href="#" class="fb-footer-link"><em>Privacy Policy</em></a></li>
             </ul>
         </div>
-        <div class="footer-col">
-            <h3>Links</h3>
-            <ul class="footer-list">
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+
+        <div class="fb-footer-bottom">
+            <div class="fb-copyright">
+            <p><em>© 2025 Fa Bene . All rights reserved.</em></p>
+            </div>
+            <div class="fb-powered">
+            <p><a href="#" class="fb-footer-link"><u>Powered by Shopify</u></a></p>
+            </div>
         </div>
     </footer>
 

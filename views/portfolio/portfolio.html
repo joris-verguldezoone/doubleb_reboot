@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FABBENE - Précommande Veste</title>
+<script defer type="module" src="./portfolio.js"></script>
+
+    <link rel="stylesheet" href="../../shared/css/header.css">
+    <link rel="stylesheet" href="../../shared/css/footer.css">
+
     <link rel="stylesheet" href="./portfolio.css">
-    <link rel="stylesheet" href="../../shared//css/header.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
@@ -23,16 +27,17 @@
 
   <header>
         <nav>
-            <div class="logo">LOGO</div>
+            <div class="header-container"> <img src="../../public/assets/logo.png" class="logo"/>
+                <div></div>
             <ul class="nav-links">
                 <li><a href="../../index.html">HOME</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="../story/story.html" class="active">STORY</a></li>
+                <li><a href="#" class="active">PORTFOLIO</a></li>
+                <li><a href="../story/story.html">STORY</a></li>
                 <li><a href="../contact/contact.html">CONTACT</a></li>
+                <div class="cart-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                </div>
             </ul>
-            <div class="cart-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
-            </div>
         </nav>
     </header>
 
@@ -46,7 +51,7 @@
 
         <div class="gallery-right">
             <div class="gallery-item">
-                <img src="../../public/assets/home-02.png" alt="Fabbene Style 2">
+                <img src="../../public/assets/Fabi-11.png" alt="Fabbene Style 2">
             </div>
             
             <div class="gallery-item-half-container">
@@ -63,14 +68,16 @@
             </div>
             
             <div class="gallery-item full-width">
-                <img src="../../public/assets/home-06.png" alt="Fabbene Style 6">
+                <img src="../../public/assets/Fabi-13.png" alt="Fabbene Style 6">
             </div>
         </div>
     </section>
     <section class="hero-section">
-        <img src="../../public/assets/veste-dos.jpg" alt="Dos de la veste bleue Fabbene avec attaches" class="hero-image">
+        <img src="../../public/assets/Fabi-15.png" alt="Dos de la veste bleue Fabbene avec attaches" class="hero-image">
         <div class="preorder-bar">PRÉCOMMANDE</div>
     </section>
+
+<section class="bg-white">
 
     <section class="description-section content-container">
         <p class="tech-text">
@@ -85,8 +92,7 @@
     </section>
 
     <section class="values-section content-container">
-        <h2 class="section-title">HISTOIRE VISION VALEUR</h2>
-
+        // TODO MEttre mission  valeur en hide and block
         <div class="value-block">
             <h3>Mission :</h3>
             <p>
@@ -108,6 +114,8 @@
             </p>
         </div>
     </section>
+</section>
+
 
     <section class="schema-section content-container">
         <img src="../../public/assets/schema-veste.png" alt="Schéma technique de la veste Fa Bene" class="schema-image">
@@ -125,8 +133,48 @@
         <a href="#" class="instagram-link">Instagram</a>
     </section>
 </main>
+    <div><a class="back-to-top" href="#">Back To Top</a></div>
 
-<script src="../../shared/cart.js"></script>
-<script type="module" src="./portfolio.js"></script>
+    <footer class="fb-footer">
+        <div class="fb-footer-top">
+            <div class="fb-footer-brand">
+            <p><em>Fa Bene propose des vestes durables, sur-mesure, et accessibles, qui reflètent l'identité de chacun pour aider tout le monde mérite à exprimer qui il est, sans compromis.</em></p>
+            </div>
+            <div class="fb-footer-newsletter">
+            <p><em>ABBonnez-vous pour BBénéficier de 10% de réduction sur votre première achat.</em></p>
+            <form class="fb-newsletter-form">
+                <input type="email" placeholder="your@email.address" class="fb-newsletter-input" required>
+                <button type="submit" class="fb-newsletter-btn">GO</button>
+            </form>
+            </div>
+        </div>
+
+        <div class="fb-footer-middle">
+            <a href="#" class="fb-footer-link"><em>Instagram</em></a>
+        </div>
+
+        <div class="fb-footer-nav">
+            <ul class="fb-nav-list">
+            <li><a href="#" class="fb-footer-link"><em>Search</em></a></li>
+            <li><a href="#" class="fb-footer-link"><em>Contact Us</em></a></li>
+            <li><a href="#" class="fb-footer-link"><em>Terms & Conditions</em></a></li>
+            <li><a href="#" class="fb-footer-link"><em>Privacy Policy</em></a></li>
+            </ul>
+        </div>
+
+        <div class="fb-footer-bottom">
+            <div class="fb-copyright">
+            <p><em>© 2025 Fa Bene . All rights reserved.</em></p>
+            </div>
+            <div class="fb-powered">
+            <p><a href="#" class="fb-footer-link"><u>Powered by Shopify</u></a></p>
+            </div>
+        </div>
+    </footer>
+
+<!--
+    <script src="../../shared/cart.js"></script>
+-->
+
 </body>
 </html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Gestion des Newsletters</title>
+    <link rel="stylesheet" href="./admin-newsletter.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="admin-header">
+        <div class="header-container">
+            <div class="logo">FAB BENE</div>
+            <nav class="admin-nav">
+                <span class="badge">Espace Admin</span>
+                <a href="../../index.html" class="nav-back">Retour au site</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="admin-container">
+        <h1 class="page-title">Créer une Newsletter</h1>
+
+        <div class="admin-grid">
+            <section class="form-section">
+                <form id="newsletter-form">
+                    <div class="form-group">
+                        <label for="newsletter-subject">Objet de l'email <span class="required">*</span></label>
+                        <input type="text" id="newsletter-subject" required placeholder="Ex: Nouvelle Collection Automne / Hiver">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="newsletter-title">Titre principal (Hero) <span class="required">*</span></label>
+                        <input type="text" id="newsletter-title" required placeholder="Ex: REJOIGNEZ LA COMMUNAUTÉ">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="newsletter-image">URL de l'image d'illustration</label>
+                        <input type="url" id="newsletter-image" placeholder="https://votre-site.com/assets/image.jpg">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="newsletter-content">Corps du message <span class="required">*</span></label>
+                        <textarea id="newsletter-content" rows="8" required placeholder="Écrivez le message de votre newsletter ici..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="newsletter-cta">Texte du bouton (CTA)</label>
+                        <input type="text" id="newsletter-cta" placeholder="Ex: Découvrir la collection">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="newsletter-link">Lien du bouton</label>
+                        <input type="url" id="newsletter-link" placeholder="https://votre-site.com/portfolio/portfolio.html">
+                    </div>
+
+                    <button type="submit" class="btn-submit">Planifier et Envoyer la Newsletter</button>
+                </form>
+            </section>
+
+            <section class="preview-section">
+                <h2 class="section-subtitle">Aperçu en temps réel</h2>
+                
+                <div class="newsletter-preview-box">
+                    <div class="email-envelope-header">
+                        <p><strong>Objet :</strong> <span id="preview-envelope-subject">(Pas d'objet)</span></p>
+                    </div>
+                    
+                    <div class="email-body-render" id="email-render-target">
+                        <div class="email-header">LOGO</div>
+                        <div class="email-hero">
+                            <h2 id="preview-email-title">TITRE DE VOTRE NEWSLETTER</h2>
+                        </div>
+                        <div class="email-image-container" id="preview-image-wrapper" style="display: none;">
+                            <img id="preview-email-image" src="" alt="Illustration">
+                        </div>
+                        <div class="email-content">
+                            <p id="preview-email-text">Le corps de votre message s'affichera ici au fur et à mesure de votre saisie...</p>
+                        </div>
+                        <div class="email-cta-container" id="preview-cta-wrapper" style="display: none;">
+                            <a href="#" id="preview-email-cta" class="email-btn">BOUTON</a>
+                        </div>
+                        <div class="email-footer">
+                            <p>© Fabbene Style. Tous droits réservés.</p>
+                            <p><a href="#">Se désabonner</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script type="module" src="./admin-newsletter.js"></script>
+</body>
+</html>

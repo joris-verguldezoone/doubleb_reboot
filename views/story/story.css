@@ -24,36 +24,6 @@ body {
     padding: 0 20px;
 }
 
-/* Header */
-header {
-    padding: 20px 40px;
-    background: white;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #999;
-    font-weight: 600;
-    font-size: 14px;
-    transition: color 0.3s;
-}
-
-.nav-links a.active, .nav-links a:hover {
-    color: var(--text-dark);
-}
-
 /* Hero Section */
 .hero {
     height: 60vh;
@@ -169,5 +139,4 @@ nav {
     .grid-2, .values-grid {
         grid-template-columns: 1fr;
     }
-    .nav-links { display: none; }
 }

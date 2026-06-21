@@ -44,35 +44,6 @@ body {
      /* Ajuste cette valeur pour le faire glisser vers le haut/bas */
 }
 
-/* --- Header (Mobile First) --- */
-.main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    border-bottom: 1px solid var(--border-color);
-    background: #fff;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.mobile-nav {
-    display: flex;
-    gap: 15px;
-    font-size: 14px;
-}
-
-.nav-item {
-    cursor: pointer;
-}
-
 /* Mobile : Les éléments s'empilent */
 .home-gallery {
     display: flex;
@@ -153,6 +124,10 @@ body {
 .hero-section {
     position: relative;
     width: 100%;
+}
+
+.bg-white{
+    background-image: url('../../public/assets/fond-site-blanc.jpg');
 }
 
 .hero-image {
@@ -311,10 +286,6 @@ body {
     /* Typographie et espacements Desktop */
     .content-container {
         padding: 40px;
-    }
-
-    .logo {
-        font-size: 28px;
     }
 
     .tech-text, .value-block p, .quote-block {
