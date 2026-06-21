@@ -12,7 +12,6 @@ app.use(express.json());
 const SUBSCRIBERS = [
     "verguldezoonejoris@yahoo.fr",
     "ponzio.fabien@gmail.com"
-    // Ajoute le reste de tes 100 abonnés ici
 ];
 
 app.post('/api/send-newsletter', async (req, res) => {

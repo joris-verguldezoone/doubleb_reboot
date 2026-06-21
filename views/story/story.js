@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (entry.isIntersecting) {
                 entry.target.style.opacity = "1";
                 entry.target.style.transform = "translateY(0)";
-            }
+                observer.unobserve(entry.target); // Arrête de surveiller cet élément
+            }   
         });
     }, observerOptions);
 

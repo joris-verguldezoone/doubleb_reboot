@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FABBENE - Précommande Veste</title>
-<script defer type="module" src="./portfolio.js"></script>
-
+    
     <link rel="stylesheet" href="../../shared/css/header.css">
     <link rel="stylesheet" href="../../shared/css/footer.css">
 
@@ -17,11 +16,12 @@
     <script type="importmap">
         {
             "imports": {
-            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
-            "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
             }
         }
-    </script>
+        </script>
+        <script defer type="module" src="./portfolio.js"></script>
 </head>
 <body>
 
@@ -46,34 +46,34 @@
     <section class="home-gallery">
         <div style="width:10vw; height:8vh;" id="webgl-container"></div>
         <div class="gallery-left absolute">
-            <img src="../../public/assets/home-01.png" alt="Fabbene Style 1">
+            <img loading="lazy" src="../../public/assets/home-01.png" alt="Fabbene Style 1">
         </div>
 
         <div class="gallery-right">
             <div class="gallery-item">
-                <img src="../../public/assets/Fabi-11.png" alt="Fabbene Style 2">
+                <img loading="lazy" src="../../public/assets/Fabi-11.png" alt="Fabbene Style 2">
             </div>
             
             <div class="gallery-item-half-container">
                 <div class="gallery-item half">
-                    <img src="../../public/assets/home-03.png" alt="Fabbene Style 3">
+                    <img loading="lazy" src="../../public/assets/home-03.png" alt="Fabbene Style 3">
                 </div>
                 <div class="gallery-item half">
-                    <img src="../../public/assets/home-04.png" alt="Fabbene Style 4">
+                    <img loading="lazy" src="../../public/assets/home-04.png" alt="Fabbene Style 4">
                 </div>
             </div>
             
             <div class="gallery-item">
-                <img src="../../public/assets/home-05.png" alt="Fabbene Style 5">
+                <img loading="lazy" src="../../public/assets/home-05.png" alt="Fabbene Style 5">
             </div>
             
             <div class="gallery-item full-width">
-                <img src="../../public/assets/Fabi-13.png" alt="Fabbene Style 6">
+                <img loading="lazy" src="../../public/assets/Fabi-13.png" alt="Fabbene Style 6">
             </div>
         </div>
     </section>
     <section class="hero-section">
-        <img src="../../public/assets/Fabi-15.png" alt="Dos de la veste bleue Fabbene avec attaches" class="hero-image">
+        <img loading="lazy" src="../../public/assets/Fabi-15.png" alt="Dos de la veste bleue Fabbene avec attaches" class="hero-image">
         <div class="preorder-bar">PRÉCOMMANDE</div>
     </section>
 
@@ -92,7 +92,7 @@
     </section>
 
     <section class="values-section content-container">
-        // TODO MEttre mission  valeur en hide and block
+       <!-- // TODO MEttre mission  valeur en hide and block -->
         <div class="value-block">
             <h3>Mission :</h3>
             <p>
@@ -118,7 +118,6 @@
 
 
     <section class="schema-section content-container">
-        <img src="../../public/assets/schema-veste.png" alt="Schéma technique de la veste Fa Bene" class="schema-image">
         <div class="preorder-bar">PRÉCOMMANDE</div>
     </section>
 

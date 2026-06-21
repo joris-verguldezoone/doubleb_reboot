@@ -59,28 +59,34 @@ body {
 .krug {
     position: relative;
     display: inline-block;
+    
 }
 
 .krug::after {
     content: "";
     position: absolute;
     left: 50%;
-    bottom: -12px;
+    bottom: -15px; /* Légèrement ajusté pour descendre sous le texte */
     transform: translateX(-50%);
     width: 0;
     height: 0;
-    background-color: red;
-    /* background-image: url('../../public/assets/krug.png'); */
-    background-image: url('/public/assets/krug.png');
+    
+    /* On retire la couleur rouge de test et on gère l'image */
+    background-image: url('../../public/assets/krug.png'); /* ⚠️ Ajuste ce chemin selon l'arborescence de ton CSS */
     background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
-    transition: all 0.3s ease;
+    
+    transition: width 0.3s ease, height 0.3s ease;
+    opacity: 0; /* On le cache au départ */
 }
 
+/* Au survol ou si actif */
 .krug:hover::after,
 .krug.active::after {
     width: 12px;
     height: 12px;
+    opacity: 1; /* On le rend visible */
 }
 
 /* 3. Responsive Unique */

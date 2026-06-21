@@ -60,7 +60,7 @@ controls.addEventListener('end', () => {
 
 let model;
 const loader = new GLTFLoader();
-loader.load('./public/gltf/BB2.gltf', (gltf) => {
+loader.load('../../public/gltf/BB2.gltf', (gltf) => {
   model = gltf.scene;
   const box = new THREE.Box3().setFromObject(model);
   const center = box.getCenter(new THREE.Vector3());
