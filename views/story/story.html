@@ -41,7 +41,14 @@
                     <p>C'est parce que j'ai longtemps considéré le vêtement comme mon seul et unique refuge et moyen d'expression que je veux en fournir à toutes les personnes qui n'en ont pas.</p>
                 </div>
                 <div class="image-block">
-                    <img src="../../public/assets/dos_headphones.jpeg" alt="Vêtement bleu">
+                    <img srcset="../../public/assets/dos_headphones-400w.webp 400w,
+                                 ../../public/assets/dos_headphones-800w.webp 800w,
+                                 ../../public/assets/dos_headphones-1200w.webp 1200w,
+                                 ../../public/assets/dos_headphones-1920w.webp 1920w"
+                         sizes="(max-width: 768px) 100vw, 50vw"
+                         src="../../public/assets/dos_headphones-1200w.webp" 
+                         alt="Vêtement bleu"
+                         loading="lazy" decoding="async">
                 </div>
             </div>
         </section>

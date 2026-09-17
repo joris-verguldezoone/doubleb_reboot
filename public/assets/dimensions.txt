@@ -1,0 +1,222 @@
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/dos_headphones-1200w.webp
+  pixelWidth: 1200
+  pixelHeight: 1593
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/dos_headphones-1920w.webp
+  pixelWidth: 1920
+  pixelHeight: 2550
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/dos_headphones-400w.webp
+  pixelWidth: 400
+  pixelHeight: 531
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/dos_headphones-800w.webp
+  pixelWidth: 800
+  pixelHeight: 1062
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/Fabi-11-1200w.webp
+  pixelWidth: 1200
+  pixelHeight: 800
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/Fabi-11-1920w.webp
+  pixelWidth: 1920
+  pixelHeight: 1280
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/Fabi-11-400w.webp
+  pixelWidth: 400
+  pixelHeight: 266
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/Fabi-11-800w.webp
+  pixelWidth: 800
+  pixelHeight: 533
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/Fabi-13-1200w.webp
+  pixelWidth: 1200
+  pixelHeight: 1800
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/Fabi-13-1920w.webp
+  pixelWidth: 1920
+  pixelHeight: 2880
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/Fabi-13-400w.webp
+  pixelWidth: 400
+  pixelHeight: 600
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/Fabi-13-800w.webp
+  pixelWidth: 800
+  pixelHeight: 1200
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/Fabi-15-1200w.webp
+  pixelWidth: 1200
+  pixelHeight: 800
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/Fabi-15-1920w.webp
+  pixelWidth: 1920
+  pixelHeight: 1280
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/Fabi-15-400w.webp
+  pixelWidth: 400
+  pixelHeight: 266
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/Fabi-15-800w.webp
+  pixelWidth: 800
+  pixelHeight: 533
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/FOND SITE (1)_page-0003-1200w.webp
+  pixelWidth: 1200
+  pixelHeight: 849
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/FOND SITE (1)_page-0003-400w.webp
+  pixelWidth: 400
+  pixelHeight: 283
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/FOND SITE (1)_page-0003-800w.webp
+  pixelWidth: 800
+  pixelHeight: 566
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/FOND SITE (1)_page-0004-1200w.webp
+  pixelWidth: 1200
+  pixelHeight: 849
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/FOND SITE (1)_page-0004-400w.webp
+  pixelWidth: 400
+  pixelHeight: 283
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/FOND SITE (1)_page-0004-800w.webp
+  pixelWidth: 800
+  pixelHeight: 566
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/FOND SITE (3)-1-1200w.webp
+  pixelWidth: 1200
+  pixelHeight: 848
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/FOND SITE (3)-1-1920w.webp
+  pixelWidth: 1920
+  pixelHeight: 1357
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/FOND SITE (3)-1-400w.webp
+  pixelWidth: 400
+  pixelHeight: 283
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/FOND SITE (3)-1-800w.webp
+  pixelWidth: 800
+  pixelHeight: 565
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/FOND SITE (3)-2-1200w.webp
+  pixelWidth: 1200
+  pixelHeight: 848
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/FOND SITE (3)-2-1920w.webp
+  pixelWidth: 1920
+  pixelHeight: 1357
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/FOND SITE (3)-2-400w.webp
+  pixelWidth: 400
+  pixelHeight: 283
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/FOND SITE (3)-2-800w.webp
+  pixelWidth: 800
+  pixelHeight: 565
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/FOND SITE (3)-3-1200w.webp
+  pixelWidth: 1200
+  pixelHeight: 848
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/FOND SITE (3)-3-1920w.webp
+  pixelWidth: 1920
+  pixelHeight: 1357
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/FOND SITE (3)-3-400w.webp
+  pixelWidth: 400
+  pixelHeight: 283
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/FOND SITE (3)-3-800w.webp
+  pixelWidth: 800
+  pixelHeight: 565
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/fond-site-blanc-1200w.webp
+  pixelWidth: 1200
+  pixelHeight: 849
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/fond-site-blanc-400w.webp
+  pixelWidth: 400
+  pixelHeight: 283
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/fond-site-blanc-800w.webp
+  pixelWidth: 800
+  pixelHeight: 566
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/fond-site-rose-1200w.webp
+  pixelWidth: 1200
+  pixelHeight: 849
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/fond-site-rose-400w.webp
+  pixelWidth: 400
+  pixelHeight: 283
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/fond-site-rose-800w.webp
+  pixelWidth: 800
+  pixelHeight: 566
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/home-01-1200w.webp
+  pixelWidth: 1200
+  pixelHeight: 1765
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/home-01-1920w.webp
+  pixelWidth: 1920
+  pixelHeight: 2824
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/home-01-400w.webp
+  pixelWidth: 400
+  pixelHeight: 588
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/home-01-800w.webp
+  pixelWidth: 800
+  pixelHeight: 1176
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/home-02-1200w.webp
+  pixelWidth: 1200
+  pixelHeight: 1765
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/home-02-1920w.webp
+  pixelWidth: 1920
+  pixelHeight: 2824
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/home-02-400w.webp
+  pixelWidth: 400
+  pixelHeight: 588
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/home-02-800w.webp
+  pixelWidth: 800
+  pixelHeight: 1176
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/home-03-400w.webp
+  pixelWidth: 400
+  pixelHeight: 600
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/home-03-800w.webp
+  pixelWidth: 800
+  pixelHeight: 1200
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/home-04-400w.webp
+  pixelWidth: 400
+  pixelHeight: 600
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/home-04-800w.webp
+  pixelWidth: 800
+  pixelHeight: 1200
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/home-05-1200w.webp
+  pixelWidth: 1200
+  pixelHeight: 1765
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/home-05-1920w.webp
+  pixelWidth: 1920
+  pixelHeight: 2824
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/home-05-400w.webp
+  pixelWidth: 400
+  pixelHeight: 588
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/home-05-800w.webp
+  pixelWidth: 800
+  pixelHeight: 1176
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/home-06-1200w.webp
+  pixelWidth: 1200
+  pixelHeight: 1249
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/home-06-1920w.webp
+  pixelWidth: 1920
+  pixelHeight: 1999
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/home-06-400w.webp
+  pixelWidth: 400
+  pixelHeight: 416
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/home-06-800w.webp
+  pixelWidth: 800
+  pixelHeight: 833
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/index-01-400w.webp
+  pixelWidth: 400
+  pixelHeight: 533
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/index-01-800w.webp
+  pixelWidth: 800
+  pixelHeight: 1066
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/krug-1200w.webp
+  pixelWidth: 1200
+  pixelHeight: 848
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/krug-1920w.webp
+  pixelWidth: 1920
+  pixelHeight: 1358
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/krug-400w.webp
+  pixelWidth: 400
+  pixelHeight: 283
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/krug-800w.webp
+  pixelWidth: 800
+  pixelHeight: 565
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/logo-1200w.webp
+  pixelWidth: 1200
+  pixelHeight: 336
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/logo-1920w.webp
+  pixelWidth: 1920
+  pixelHeight: 538
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/logo-400w.webp
+  pixelWidth: 400
+  pixelHeight: 112
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/logo-800w.webp
+  pixelWidth: 800
+  pixelHeight: 224
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/story-bg-1200w.webp
+  pixelWidth: 1200
+  pixelHeight: 900
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/story-bg-1920w.webp
+  pixelWidth: 1920
+  pixelHeight: 1440
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/story-bg-400w.webp
+  pixelWidth: 400
+  pixelHeight: 300
+/Users/jverguldezoone/Desktop/doubleb_reboot/public/assets/story-bg-800w.webp
+  pixelWidth: 800
+  pixelHeight: 600
