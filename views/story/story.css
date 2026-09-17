@@ -27,7 +27,7 @@ body {
 /* Hero Section */
 .hero {
     height: 60vh;
-    background: url('../../public//assets/story-bg.jpeg') center top/cover;
+    background: url('../../public/assets/story-bg-1920w.webp') center top/cover;
     position: relative; 
     display: flex;
     align-items: center;
@@ -45,7 +45,7 @@ body {
 /* Story Section */
 .story-content {
     padding: 100px 0;
-    background-image: url('../../public/assets/fond-site-blanc.jpg'); /* Motif léger en fond */
+    background-image: url('../../public/assets/fond-site-blanc-1200w.webp'); /* Motif léger en fond */
 }
 
 .grid-2 {
@@ -113,7 +113,7 @@ body {
 /* CTA Footer area */
 .cta-section {
     padding: 60px 0;
-    background: url('../../public/assets/story-bg.jpeg') center bottom/cover;
+    background: url('../../public/assets/story-bg-1920w.webp') center bottom/cover;
     text-align: center;
 }
 

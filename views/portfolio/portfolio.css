@@ -21,27 +21,17 @@ body {
     -webkit-font-smoothing: antialiased;
 }
  
-/* TODO: Faire une fonction js qui rend la position absolute responsive */
 #webgl-container {
-    position: fixed; /* Reste collé à l'écran même au scroll */
+    position: fixed;
     top: 50%;
     left: 48%;
-    transform: translate(-50%, -50%); /* Centre le point d'ancrage exactement au milieu */
-    z-index: 10; /* Assure-toi qu'il est au-dessus des images */
-    
-    /* ASTUCE TRÈS IMPORTANTE POUR LA 3D SUPERPOSÉE :
-      Si ton conteneur est plus grand que ton logo, il risque de bloquer
-      les clics ou le scroll sur les images en dessous. 
-      On désactive les événements sur le conteneur...
-    */
+    transform: translate(-50%, -50%);
+    z-index: 10;
     pointer-events: none; 
 }
 
-/* et on les réactive UNIQUEMENT sur le rendu 3D (le canvas) */
 #webgl-container canvas {
     pointer-events: auto;
-    /* transform: translateX(-1em); */
-     /* Ajuste cette valeur pour le faire glisser vers le haut/bas */
 }
 
 /* Mobile : Les éléments s'empilent */
@@ -60,10 +50,9 @@ body {
 }
 
 .gallery-left.absolute {
-    position: relative; /* Pas d'effet sticky sur mobile */
+    position: relative; 
 }
 
-/* Style des images générales */
 .gallery-left img, .gallery-right img {
     width: 100%;
     height: auto;
@@ -71,7 +60,6 @@ body {
     object-fit: cover;
 }
 
-/* Texte par-dessus l'image de gauche */
 .absolute-text {
     position: absolute;
     bottom: 20px;
@@ -82,7 +70,6 @@ body {
     font-weight: bold;
 }
 
-/* Les deux images côte à côte (Droite) */
 .gallery-item-half-container {
     display: flex;
     width: 100%;
@@ -96,7 +83,6 @@ body {
     height: 100%;
 }
 
-/* Barre de précommande */
 .gallery-item.full-width {
     position: relative;
 }
@@ -113,21 +99,19 @@ body {
     text-transform: uppercase;
 }
 
-/* --- Conteneur de Texte Standard --- */
 .content-container {
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
 }
 
-/* --- Sections Supplémentaires --- */
 .hero-section {
     position: relative;
     width: 100%;
 }
 
 .bg-white{
-    background-image: url('../../public/assets/fond-site-blanc.jpg');
+    background-image: url('../../public/assets/fond-site-blanc-1200w.webp');
 }
 
 .hero-image {
@@ -199,7 +183,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* --- Newsletter & Instagram --- */
 .newsletter-section {
     padding-top: 30px;
     padding-bottom: 40px;
@@ -252,25 +235,22 @@ body {
     width: 100%;
 }
 
-
-/* --- AJUSTEMENTS POUR BUREAU (Écrans > 768px) --- */
 @media (min-width: 768px) {
-    /* Activation de l'effet gauche fixe / droite défilante */
     .home-gallery {
         flex-direction: row;
-        align-items: flex-start; /* Essentiel pour que le sticky fonctionne */
+        align-items: flex-start;
     }
 
     .gallery-left.absolute {
         position: sticky;
-        top: 0; /* ou la hauteur de ton header si tu veux qu'il reste sous le header : top: 60px; */
+        top: 0; 
         left: 0;
         width: 50%;
         height: 100vh;
     }
 
     .gallery-left img {
-        height: 100%; /* L'image prend toute la hauteur de l'écran */
+        height: 100%; 
     }
 
     .absolute-text {
@@ -283,7 +263,6 @@ body {
         width: 50%;
     }
 
-    /* Typographie et espacements Desktop */
     .content-container {
         padding: 40px;
     }
@@ -297,7 +276,6 @@ body {
         padding: 20px;
     }
 
-    /* Newsletter Desktop */
     .newsletter-form {
         flex-direction: row;
     }
